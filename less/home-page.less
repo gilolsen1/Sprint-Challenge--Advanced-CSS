@@ -14,15 +14,32 @@
 
     .sagan_hero {         //subtle effect, unsure if working. inspect
       .roundedborders;
+      //add in % for with mixin
     }
   
   }
 
-
-  .space-images {
-    display: flex;
+  .space-images-desktop {
+    display: flex;            //will need to be none @phone
     flex-wrap: wrap;
     width: 100%;
+
+    img {
+      width: 28%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 100%;
+    }
+  }
+
+  .space-images-mobile {
+    display: none;          //display none/ flex works to control html
+    flex-wrap: wrap;
+    width: 100%;
+    
+    @media @phone {         // MEDIA NOT WORKING RN
+    display: flex; 
+    } 
 
     img {
       width: 28%;
