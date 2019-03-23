@@ -1,3 +1,10 @@
+/*.cta_button(){
+    background-color: @btn-bg-color;
+    height: 2rem;
+    width:4rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+} */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -237,6 +244,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  border: 1 px solid #dee2e6;
+  color: #F1F1F1;
+  background-color: #22283A;
+  border-radius: 5px;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  vertical-align: center;
 }
 .home .walk .walk-img {
   width: 46%;
