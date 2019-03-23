@@ -33,16 +33,26 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+   Both adjust at breakpoints with Media queries, but fully responsive sites use % units for element widths and fonts.
 
 2. Describe what it means to be mobile first vs desktop first.
+   It just means which code you start with. If you do desktop first, you’ll code the site with all elements and styling for max-width around 1080px, then you’ll use max-width media queries to create table  / mobile versions of the site at breakpoints in the neighborhood of 800 / 500px respectively. If you start with mobile first, your media queries will switch to min-width, and design UP to desktop sizes.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+   Sets everything to base-10 for pixels. Ie. 16px == 1.6rem.
 
 4. How would you describe preprocessing to someone new to CSS?
+   We know that browsers can only utilize vanilla / normal CSS.  We also know that as we add many pages, with many styles, media queries for responsive design etc, CSS becomes very complicated for HUMANS to read/understand, and work with without errors. 
+Preprocessing uses a different language to simplify CSS into smaller more-human manageable chunks and logic, and then uses Javascript (under the hood) to transform (or “compile”) the human-coded styling in a simpler pre-processing language like LESS or SASS into vanilla/normal CSS for the browser to style the page.  It’s a bit more complicated to set up, but once you get it up and running, the benefits of less errors and more powerful functionality (like the ability to use variables and mixins) make it worth the effort. 
+
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+   FAVORITE: Variables.
+   Most trouble:
+   Setting up the compiler and ensuring it is running properly + Parametric mixins. Nesting is a concept that seems super intuitive in the lecture and I’m sure I’ll love it, but at the scale we’re working at with these pages we haven’t done enough reps… setting that and mixins up seems like more trouble than just doing the CSS at the scale we’re at, even though it’s super clear that it has value at a larger scale.
 
-You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+
+DID NOT SKIP THIS SECTION : )
 
 ## Project Set Up
 
