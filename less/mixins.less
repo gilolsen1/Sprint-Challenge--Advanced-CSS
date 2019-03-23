@@ -8,15 +8,22 @@
     border-radius: 10px;
 } */
 
+.roundedborders{
+    border:1px solid @border-real;     // at least move back to 
+    border-radius: 5px;
+}       
+//not working.
+
 
 .cta_button() {
-    border:1 px solid @border-real;
+    border:1px solid red;  //@border-real over-ride cascade below
+    //border-radius: 5px;
+    .roundedborders;      // mixin works
     color: @sea-shell;
     background-color:@btn-bg-color;
-    border-radius: 5px;
     width: 10rem;  // use parameter for mobile
-    height: 3rem;  // use parameter for mobile
-    font-size: 1.5rem;
+    height: 4rem;  // use parameter for mobile
+    font-size: 2rem;
     text-align: center;
     vertical-align: center;   //HOW??
 
@@ -25,3 +32,5 @@
         background-color:@sea-shell;
     }
   }
+
+  
