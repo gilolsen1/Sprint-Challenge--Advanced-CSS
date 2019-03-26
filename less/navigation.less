@@ -1,1 +1,35 @@
 // Navigation code here
+
+.navwrap {
+    display: flex;
+    flex-direction:column;
+    //flex-wrap: wrap;
+    justify-content: center;
+    background-color: @nav-border;
+    //align-items:; 
+    //width: 800px;
+}
+
+.logo_text {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    padding: .25rem;
+    //width: 100%;
+}
+
+.navlinks {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ a {
+    font-size: 1.6rem;
+    color: @nav-font;
+    text-decoration: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+} 

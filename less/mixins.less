@@ -1,1 +1,36 @@
 // Mixins Here
+
+/*.cta_button(){
+    background-color: @btn-bg-color;
+    height: 2rem;
+    width:4rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+} */
+
+.roundedborders{
+    border:1px solid @border-real;     // at least move back to 
+    border-radius: 5px;
+}       
+//not working.
+
+
+.cta_button() {
+    border:1px solid red;  //@border-real over-ride cascade below
+    //border-radius: 5px;
+    .roundedborders;      // mixin works
+    color: @sea-shell;
+    background-color:@btn-bg-color;
+    width: 10rem;  // use parameter for mobile
+    height: 4rem;  // use parameter for mobile
+    font-size: 2rem;
+    text-align: center;
+    vertical-align: center;   //HOW??
+
+    &:hover {
+        color:@btn-bg-color;
+        background-color:@sea-shell;
+    }
+  }
+
+  

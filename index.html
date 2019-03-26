@@ -3,8 +3,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>SpaceWalkers</title>
+  <title>SpaceWalkers_Gil-Olsen</title>
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
@@ -17,21 +18,40 @@
 <body>
 
  <!-- navigation code here -->
+ <div class="navwrap">
+
+   <h1 class="logo_text">SpaceWalkers</h1>
+
+  <nav class="navlinks">
+    <a href="">Home</a>
+    <a href="">About Us</a>
+    <a href="">Blog</a>
+    <a href="">Contact</a>
+    <a href="">Sign in</a>
+  </nav>
+
+ </div>
 
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
+       <img class="sagan_hero" src="./img/main-header.png" alt="carl sagan rules">
 
       <h2>Lift Off</h2>
     
       <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
     </header>
 
-    <section class="space-images">
+    <section class="space-images-desktop">
         <img src="img/blast.png" class="blast" alt="Rocket blasting off">
         <img src="img/sky.png" class="sky" alt="Space sky image">
         <img src="img/launch.png" class="launch" alt="Launching rocket">
+    </section>
+
+    <section class="space-images-mobile">
+        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
+        <!--removed two from desktop - refactor to ids for images-->
     </section>
    
     <section class="visit-planets">
@@ -50,10 +70,8 @@
         <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
       
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
-      
-        <div class="btn">
-          Sign Up
-        </div>
+        <!--button was here-->
+
       </div>
       
       <div class="walk-img">
@@ -61,6 +79,12 @@
       </div>
 
     </section>
+    
+    <div class="btn">
+        <!--<button class="btn">Sign Up</button>--> 
+        <!--Was just Sign Up text here in div-->
+        Sign Up
+       </div>
 
     <footer>
       <p>Copyright SpaceWalkers 2018</p>

@@ -11,19 +11,51 @@
     p {
       padding:0 15px;
     }
+
+    .sagan_hero {         //subtle effect, unsure if working. inspect
+      .roundedborders;
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+      //add in % for with mixin
+    }
   
   }
 
-  .space-images {
-    display: flex;
+  .space-images-desktop {
+    display: flex;            //will need to be none @phone
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {         // MEDIA FIXED!
+      display: none; 
+      } 
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+  }
+
+  .space-images-mobile {
+    display: none;          //display none/ flex works to control html
+    flex-wrap: wrap;
+    width: 100%;
+    
+    @media @phone {         // MEDIA FIXED!
+    display: flex; 
+    } 
+
+    img {
+      width: 28%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 100%;
+      @media @phone {
+      width:100%;
+      }
     }
   }
 
@@ -46,8 +78,16 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -57,14 +97,17 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
+      //btn was here
+      
+
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone {
+        width:100%;
+      }
       img {
         width: 100%;
         height: auto;
@@ -72,4 +115,12 @@
       }
     }
   }
+
+  .btn {
+    .cta_button();
+    @media @phone {
+      width:100%;
+    }
+}
+
 }// home
